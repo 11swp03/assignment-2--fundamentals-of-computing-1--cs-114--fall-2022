@@ -5,7 +5,7 @@ public class Assignment2 {
 		int dimondsize;
         Scanner dimondsizeinput = new Scanner(System.in);
 		System.out.print("Enter the size of dimond: ");
-		dimondsize = dimondsizeinput.nextInt() - 2;
+		dimondsize = dimondsizeinput.nextInt();
 		
 
         int count = 1;
