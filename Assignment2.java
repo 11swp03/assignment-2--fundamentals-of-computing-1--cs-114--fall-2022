@@ -8,7 +8,13 @@ public class Assignment2 {
 		dimondsize = dimondsizeinput.nextInt();
 		
 
-        for(int count = 1;count <= dimondsize ; count ++){
+        for(int count = 1;count > - dimondsize ; count ++){
+            for(int j = 0;j < count; j++ ){
+                System.out.print(" ");
+            }
+            for(int j = 0; j >= count; j++){
+                System.out.print(" ");
+            }
             System.out.println("*");
 		}
     }
