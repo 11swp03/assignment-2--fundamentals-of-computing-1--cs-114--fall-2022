@@ -5,17 +5,22 @@ public class Assignment2 {
 		int dimondsize;
         Scanner dimondsizeinput = new Scanner(System.in);
 		System.out.print("Enter the size of dimond: ");
-		dimondsize = dimondsizeinput.nextInt();
+		dimondsize = dimondsizeinput.nextInt() - 2;
 		
 
-        for(int count = 1;count > - dimondsize ; count ++){
-            for(int j = 0;j < count; j++ ){
-                System.out.print(" ");
+        int count = 1;
+        for (int i = 1; i <= 2 * dimondsize - 1; i++) {
+            for (int j = count; j <= dimondsize; j++) {
+                System.out.print("  ");
             }
-            for(int j = 0; j >= count; j++){
-                System.out.print(" ");
+            for (int k = 1; k <= count * 2 - 1; k++) {
+                System.out.print("* ");
             }
-            System.out.println("*");
-		}
+            if (i < dimondsize)
+                count++;
+            else
+                count--;
+            System.out.println("");
+        }
     }
 }
