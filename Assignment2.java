@@ -12,13 +12,13 @@ public static void main(String[] args) {
 
         for (int firstforloopcounter = 1; firstforloopcounter <= dimondsize; firstforloopcounter++) {
             System.out.println("");
-            for (int spacecounter = count; spacecounter <= dimondsize; spacecounter++) {
+            for (int spacecounter = repeater; spacecounter <= dimondsize; spacecounter++) {
             System.out.print("  ");
             }
-            for (int starcounter = 1; starcounter <= 2*count-1; starcounter++) {
+            for (int starcounter = 1; starcounter <= 2*repeater-1; starcounter++) {
                System.out.print("* ");
             }
-            if (i < dimondsize/2)
+            if (firstforloopcounter < dimondsize/2)
                 repeater++;
             else
                 repeater--;
@@ -26,3 +26,5 @@ public static void main(String[] args) {
         System.out.println("");
     }
 }
+
+//number%2 == 1 then odd, else even
