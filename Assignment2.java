@@ -5,8 +5,8 @@ public static void main(String[] args) {
 
     int dimondsize;
     Scanner dimondsizeinput = new Scanner(System.in);
-	System.out.print("Enter the size of dimond: ");
-	dimondsize = dimondsizeinput.nextInt();
+    System.out.print("Enter the size of dimond: ");
+    dimondsize = dimondsizeinput.nextInt();
 
         for(int count = 0, starcount = 1; count <=dimondsize/2; count++){
             for(int count2 = 1; count2 <= dimondsize/2; count2++){
