@@ -12,10 +12,10 @@ public static void main(String[] args) {
 
         for (int firstforloopcounter = 1; firstforloopcounter <= dimondsize; firstforloopcounter++) {
             System.out.println("");
-            for (int j = count; j <= dimondsize; j++) {
+            for (int spacecounter = count; spacecounter <= dimondsize; spacecounter++) {
             System.out.print("  ");
             }
-            for (int k = 1; k <= 2*count-1; k++) {
+            for (int starcounter = 1; starcounter <= 2*count-1; starcounter++) {
                System.out.print("* ");
             }
             if (i < dimondsize/2)
