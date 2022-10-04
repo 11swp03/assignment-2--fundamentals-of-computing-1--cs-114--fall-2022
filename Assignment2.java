@@ -2,26 +2,26 @@ import java.util.Scanner;
 
 public class Assignment2 {
 public static void main(String[] args) {
-    int repeater = 1;
-    int dimondsize;
+    int Repeater = 1;
+    int DimondSize;
     Scanner dimondsizeinput = new Scanner(System.in);
     System.out.print("Enter the size of dimond: ");
-    dimondsize = dimondsizeinput.nextInt();
-    dimondsize = dimondsize+2;
+    DimondSize = dimondsizeinput.nextInt();
+    DimondSize = DimondSize+2;
 
 
-        for (int firstforloopcounter = 1; firstforloopcounter <= dimondsize; firstforloopcounter++) {
+        for (int FirstForLoopCounter = 1; FirstForLoopCounter <= DimondSize; FirstForLoopCounter++) {
             System.out.println("");
-            for (int spacecounter = repeater; spacecounter <= dimondsize; spacecounter++) {
+            for (int SpaceCounter = Repeater; SpaceCounter <= DimondSize; SpaceCounter++) {
             System.out.print("  ");
             }
-            for (int starcounter = 1; starcounter <= 2*repeater-1; starcounter++) {
+            for (int StarCounter = 1; StarCounter <= 2*Repeater-1; StarCounter++) {
                System.out.print("* ");
             }
-            if (firstforloopcounter < dimondsize/2)
-                repeater++;
+            if (FirstForLoopCounter < DimondSize/2)
+                Repeater++;
             else
-                repeater--;
+                Repeater--;
         }
         System.out.println("");
     }
