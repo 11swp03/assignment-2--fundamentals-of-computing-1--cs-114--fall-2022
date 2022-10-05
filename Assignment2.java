@@ -31,7 +31,16 @@ public static void main(String[] args) {
                     System.out.print(" ");
                 }
                 for(int StarCounter = 1; StarCounter <= 2*EvenForLoopCounter-1; StarCounter++){
-                    System.out.print("*")
+                    System.out.print("*");
+                }
+                System.out.println("");
+            }
+            for(int EvenForLoopCounter = DimondSize-1; EvenForLoopCounter >= 1; EvenForLoopCounter--){
+                for(int SpaceCounter = 1; SpaceCounter <= DimondSize-EvenForLoopCounter; SpaceCounter++){
+                    System.out.print(" ");
+                }
+                for(int StarCounter = 1; StarCounter <= 2*EvenForLoopCounter-1; StarCounter++){
+                    System.out.print("*");
                 }
                 System.out.println("");
             }
