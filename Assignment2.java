@@ -7,9 +7,11 @@ public static void main(String[] args) {
     Scanner dimondsizeinput = new Scanner(System.in);
     System.out.print("Enter the size of dimond: ");
     DimondSize = dimondsizeinput.nextInt();
-    DimondSize = DimondSize+2;
+
 
         if (DimondSize%2 == 1){
+            DimondSize = DimondSize+2;
+
             for (int FirstForLoopCounter = 1; FirstForLoopCounter <= DimondSize; FirstForLoopCounter++) {
                 System.out.println("");
                 for (int SpaceCounter = Repeater; SpaceCounter <= DimondSize; SpaceCounter++) {
