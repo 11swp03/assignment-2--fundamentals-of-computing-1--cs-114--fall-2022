@@ -28,6 +28,7 @@ public static void main(String[] args) {
             System.out.println("");
         }
         else{
+            DimondSize = DimondSize-1;
             for(int EvenForLoopCounter = 0; EvenForLoopCounter <= DimondSize; EvenForLoopCounter++){
                 for(int SpaceCounter = 1; SpaceCounter <= DimondSize-EvenForLoopCounter; SpaceCounter++){
                     System.out.print(" ");
