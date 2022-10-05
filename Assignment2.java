@@ -9,22 +9,24 @@ public static void main(String[] args) {
     DimondSize = dimondsizeinput.nextInt();
     DimondSize = DimondSize+2;
 
-
-        for (int FirstForLoopCounter = 1; FirstForLoopCounter <= DimondSize; FirstForLoopCounter++) {
+        if (DimondSize%2 == 1){
+            for (int FirstForLoopCounter = 1; FirstForLoopCounter <= DimondSize; FirstForLoopCounter++) {
+                System.out.println("");
+                for (int SpaceCounter = Repeater; SpaceCounter <= DimondSize; SpaceCounter++) {
+                System.out.print("  ");
+                }
+                for (int StarCounter = 1; StarCounter <= 2*Repeater-1; StarCounter++) {
+                System.out.print("* ");
+                }
+                if (FirstForLoopCounter < DimondSize/2)
+                    Repeater++;
+                else
+                    Repeater--;
+            }
             System.out.println("");
-            for (int SpaceCounter = Repeater; SpaceCounter <= DimondSize; SpaceCounter++) {
-            System.out.print("  ");
-            }
-            for (int StarCounter = 1; StarCounter <= 2*Repeater-1; StarCounter++) {
-               System.out.print("* ");
-            }
-            if (FirstForLoopCounter < DimondSize/2)
-                Repeater++;
-            else
-                Repeater--;
         }
-        System.out.println("");
+        else{
+
+        }
     }
 }
-
-//number%2 == 1 then odd, else even
